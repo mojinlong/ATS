@@ -265,11 +265,15 @@ def interview_create(uid):
     }
     response = request.post_body(url, body)
 
+
 def add_candidate_tag():
     """
     给候选人添加标签
     post
+        candidateId
+        name
     """
+    url = '/pic/api/candidate/add_candidate_tag'
 
 
 def add_evaluation():

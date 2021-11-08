@@ -8,8 +8,8 @@
 import time
 from pprint import pprint
 from faker import Faker
-from test_case.common_ats import request
-from test_case.common_ats.enumeration_ats.candidate_enumerate import candidate_status
+from test_case.common import request
+from test_case.enumeration_ats.candidate_enumerate import candidate_status
 from test_config import param_config
 
 fake = Faker(locale='zh_CN')
@@ -611,17 +611,17 @@ def attachment():
     response = request.post_body(url, body=body)
 
 
-# if __name__ == '__main__':
-    # # '''创建候选人:待筛选-筛选通过'''
-    # candidate_enumerates = candidate_status
-    # create = candidate_create(name=fake.name())
-    # if create[2] == candidate_enumerates.WAIT_FOR_SCREEN.value:
-    #     update_candidate_status(name=create[0], uid=create[1], status=candidate_enumerates.SUCCESS_SCREEN.value)
-    # else:
-    #     raise Exception('候选人{}状态错误'.format(create[0]))
-    # ''' 安排面试'''
-    # interview_create(uid=create[1])
-    # update_candidate_status(name=create[0], uid=create[1], status=candidate_enumerates.SUCCESS_SCHEDULED.value)
+if __name__ == '__main__':
+    # '''创建候选人:待筛选-筛选通过'''
+    candidate_enumerates = candidate_status
+    create = candidate_create(name=fake.name())
+    if create[2] == candidate_enumerates.WAIT_FOR_SCREEN.value:
+        update_candidate_status(name=create[0], uid=create[1], status=candidate_enumerates.SUCCESS_SCREEN.value)
+    else:
+        raise Exception('候选人{}状态错误'.format(create[0]))
+    ''' 安排面试'''
+    interview_create(uid=create[1])
+    update_candidate_status(name=create[0], uid=create[1], status=candidate_enumerates.SUCCESS_SCHEDULED.value)
     # back_tone_order_open_flag()
     # # 背调套餐查询
     # package = back_tone_order_choose_package("套餐A")

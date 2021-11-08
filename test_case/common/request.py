@@ -1,10 +1,10 @@
-# __author:"zonglr"
-# date:2020/6/10
+# __author:"MOYA"
 # !/usr/bin/env python3
 # _*_ coding: utf-8 _*_
+
 import requests, json
-import test_case.common_ats.get_token as get_token, os
-import test_case.common_ats.logger as logger
+import test_case.common.get_token as get_token, os
+import test_case.common.logger as logger
 from test_config import param_config, yamlconfig
 headers = get_token.headers
 api_url = param_config.api_url

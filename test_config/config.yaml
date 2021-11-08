@@ -4,7 +4,7 @@ department_list:
 - 3
 - 4
 goods:
-  id: 1184
+  id: 1186
   name:
     high: High
     low: iow
@@ -18,4 +18,4 @@ role:
   operator: 服务商角色
   supplier: 供应商角色
 testname: 测试科室
-time: '1018102850'
+time: '1103135805'

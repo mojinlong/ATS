@@ -1,13 +1,13 @@
 api_url = "https://ats-test.51zhaopin.cn"  # 测试环境
+# api_url = "https://ats-exp.51zhaopin.cn/"    # 联调
 # api_url = "https://ats-pre.51zhaopin.cn"      # 预发布
 # api_url = "https://ats.51zhaopin.cn"          # 生产
 file_name = '【测试工程师  _ 上海12-18K】高杰 12年.pdf'  # 简历解析文件
-token = "Bearer eyJhbGciOiJIUzI1NiJ9" \
-        ".eyJzdWIiOiI0OTQ5NjI1MTExNjQyNTIxNiIsImlhdCI6MTYzNTQ3MTEwMSwiZXhwIjoxNjM1NTE0MzAxfQ" \
-        ".v5t04CDiDFcUGcaraf6oob5dEVZ0ftxTyuKHcMWV_Cc "
+token = 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0OTQ5NjI1MTExNjQyNTIxNiIsImlhdCI6MTYzNjMzNDE0NSwiZXhwIjoxNjM2Mzc3MzQ1fQ.WtcM1wefpAnHTKmTzbg5KatdPoWu5X6PkeCpJHblP5A'
 phone = '17600888399'  # 手机号
 email = 'm17600888399@163.com'  # email
 clientContact = '袁帅'
+categoryTreeName = 'iOS开发工程师'
 # hospital_id = '156'
 # if hospital_id == '200':
 #     api_url = 'http://192.168.10.21:8282/server'
